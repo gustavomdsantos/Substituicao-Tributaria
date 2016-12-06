@@ -61,6 +61,11 @@ h2, .h2 {
   font-size: 16pt;
 }
 
+h3, .h3 {
+  font-size: 12pt;
+  font-style: italic;
+}
+
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: "Roboto","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
@@ -74,7 +79,7 @@ hr {
   padding-left: 32px;
   padding-right: 32px;
   float: center;
-  height: 89.6vh; /*100% da tela -navbar*/
+  height: 100vh; /*100% da tela -navbar*/
 }
 
 @media (min-width: 1200px) {
