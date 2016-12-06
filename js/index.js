@@ -15,8 +15,14 @@ function removeElementsByClass(className){
  * Processa as informações, gerando um novo HTML.
  */
 function verResultados() {
-  removeElementsByClass("form-group");
-  alert("Funfou");
+
+  var resultado = document.createElement('div');
+  resultado.id = 'resultado';
+  resultado.className = 'alert alert-info';
+  resultado.value = "<strong>Info!</strong> Indicates a neutral informative change or action.";
+
+  document.getElementsByClassName('container')[0].appendChild(resultado);
+  //removeElementsByClass("form-group");
 }
 
 /**
