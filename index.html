@@ -11,7 +11,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles/paper_bootstrap.min.css">
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.maskMoney.min.js"></script>
     <link rel="stylesheet" href="styles/index.css">
+    <script type="text/javascript" src="js/index.js"></script>
     <link rel="icon" href="assets/icon/favicon.png">
     <title>Substituição Tributária</title>
   </head>
@@ -171,6 +174,51 @@
                 </table>
               </td>
             </tbody>
+          </table>
+        </div>
+        <!-- Seção "Dados de valores sobre o produto" -->
+        <div class="form-group" id="dados-valores-produto">
+          <h2>Dados de valores sobre o produto</h2>
+          <hr>
+          <table class="table-condensed">
+            <tr>
+              <td>
+                <table class="table-condensed">
+                  <tr>
+                    <td class="td-first-col"><label for="preco-total-produto">Preço total do produto:</label></td>
+                    <td><input type="text" name="preco-total-produto" class="real"/></td>
+                  </tr>
+                  <tr>
+                    <td class="td-first-col"><label for="desconto-incondicional">Desconto Incondicional:</label></td>
+                    <td><input type="text" name="desconto-incondicional" class="real"/></td>
+                  </tr>
+                </table>
+              </td>
+              <td>
+                <table class="table-condensed">
+                  <tr>
+                    <td class="td-first-col"><label for="outras-despesas">Outras despesas:</label></td>
+                    <td><input type="text" name="outras-despesas" class="real"/></td>
+                  </tr>
+                  <tr>
+                    <td class="td-first-col"><label for="seguro">Seguro:</label></td>
+                    <td><input type="text" name="seguro" class="real"/></td>
+                  </tr>
+                </table>
+              </td>
+              <td>
+                <table class="table-condensed">
+                  <tr>
+                    <td class="td-first-col"><label for="frete">Frete:</label></td>
+                    <td><input type="text" name="frete" class="real"/></td>
+                  </tr>
+                  <tr>
+                    <td class="td-first-col"><label for="ipi">IPI:</label></td>
+                    <td><input type="text" name="ipi" class="real"/></td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
           </table>
         </div>
       </form>
