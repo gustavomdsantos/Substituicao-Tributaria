@@ -57,8 +57,16 @@ h1, .h1 {
   font-size: 24pt;
 }
 
+h2, .h2 {
+  font-size: 16pt;
+}
+
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: "Roboto","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+hr {
+  margin-top: 0px;
 }
 
 .container {
@@ -73,4 +81,9 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   .container {
     width: 970px;
   }
+}
+
+/* Classe criada para alinhar elementos da primeira coluna para a direita. */
+.td-first-col {
+  text-align: right;
 }
