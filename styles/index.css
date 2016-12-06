@@ -87,3 +87,14 @@ hr {
 .td-first-col {
   text-align: right;
 }
+
+/* Rodapé fixo na parte inferior da página. */
+footer {
+    background-color: #F3F3F3;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    position:fixed;
+    left: 0;
+    bottom:0;
+    width:100%;
+}
