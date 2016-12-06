@@ -88,6 +88,10 @@ hr {
   text-align: right;
 }
 
+select {
+  padding-left: 4px;
+}
+
 /* Rodapé fixo na parte inferior da página. */
 footer {
     background-color: #F3F3F3;
