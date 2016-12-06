@@ -115,6 +115,10 @@ input[type=text], input[type=password], input[type=email], input[type=number] {
   line-height: 24px;
 }
 
+.btn-primary {
+  background-color: #1C408C;
+}
+
 /* Rodapé fixo na parte inferior da página. */
 footer {
     background-color: #F3F3F3;
