@@ -8,6 +8,10 @@
   src: url('../assets/font/Roboto-Light.ttf');
 }
 
+body {
+  background-color: #D9EDF8;
+}
+
 .navbar-header {
   height: 64px;
   padding-top: 11px;
@@ -26,6 +30,7 @@
 
 .navbar {
   background-color: #D9EDF8;
+  margin-bottom: 0px;
 }
 
 .navbar-default .navbar-brand {
@@ -49,9 +54,23 @@
 }
 
 h1, .h1 {
-  font-size: 28pt;
+  font-size: 24pt;
 }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: "Roboto","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.container {
+  background-color: #fff;
+  padding-left: 32px;
+  padding-right: 32px;
+  float: center;
+  height: 89.6vh; /*100% da tela -navbar*/
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 970px;
+  }
 }
