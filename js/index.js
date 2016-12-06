@@ -1,6 +1,8 @@
 /**
- * Faz formatação automática das caixas de texto para dinheiro (em reais).
+ * Faz formatação automática das caixas de texto para dinheiro e porcentagem.
+ * Fonte: https://igorescobar.github.io/jQuery-Mask-Plugin
  */
 $(document).ready(function(){
-      $("input.real").maskMoney({showSymbol:true, symbol:"R$", decimal:",", thousands:"."});
+  $('.money').mask("#.##0,00", {reverse: true});
+  $('.percent').mask('##0,00%', {reverse: true});
 });
