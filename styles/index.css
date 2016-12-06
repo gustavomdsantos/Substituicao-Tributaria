@@ -42,3 +42,8 @@
     margin-left: 0px;
   }
 }
+
+.navbar-default .navbar-brand:hover,.navbar-default .navbar-brand:focus
+{
+  color: #1C408C;
+}
