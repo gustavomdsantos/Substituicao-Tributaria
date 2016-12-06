@@ -83,8 +83,8 @@ hr {
   padding-left: 32px;
   padding-right: 32px;
   padding-top: 64px;
+  padding-bottom: 64px;
   float: center;
-  height: 110vh; /*100% da tela -navbar*/
 }
 
 @media (min-width: 1200px) {
