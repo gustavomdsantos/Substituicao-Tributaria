@@ -47,3 +47,11 @@
 {
   color: #1C408C;
 }
+
+h1, .h1 {
+  font-size: 28pt;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: "Roboto","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
