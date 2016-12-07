@@ -1,28 +1,10 @@
 /**
- * Remove elementos pelo nome da classe.
- * Não usa jQuery.
- *
- * Fonte: http://stackoverflow.com/a/14066534
- */
-function removeElementsByClass(className){
-  var elements = document.getElementsByClassName(className);
-  while(elements.length > 0){
-    elements[0].parentNode.removeChild(elements[0]);
-  }
-}
-
-/**
  * Processa as informações, gerando um novo HTML.
  */
 function verResultados() {
+  var precoTotal = document.getElementsByName('preco-total-produto')[0].value;
 
-  var resultado = document.createElement('div');
-  resultado.id = 'resultado';
-  resultado.className = 'alert alert-info';
-  resultado.value = "<strong>Info!</strong> Indicates a neutral informative change or action.";
-
-  document.getElementsByClassName('container')[0].appendChild(resultado);
-  //removeElementsByClass("form-group");
+  alert("Funcionou!\n\nPreço total do produto: " + precoTotal);
 }
 
 /**
