@@ -2,7 +2,9 @@
  * Processa as informações, gerando um novo HTML.
  */
 function verResultados() {
-  var precoTotal = document.getElementsByName('preco-total-produto')[0].value;
+
+
+var listaEstados = JSON.parse("");
 
   alert("Funcionou!\n\nPreço total do produto: " + precoTotal);
 }
