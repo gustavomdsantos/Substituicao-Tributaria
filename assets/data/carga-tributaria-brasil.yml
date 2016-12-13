@@ -55,7 +55,6 @@ go:
     - mg
     - mt
     - ms
-    - sp
 ma:
   carga_tributaria: 0.0616
   vizinhos:
