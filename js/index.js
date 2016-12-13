@@ -1,10 +1,11 @@
 /**
- * Processa as informações, gerando um novo HTML.
+ * Processa as informações, exibindo em uma caixa de diálogo do navegador (alert).
  */
 function verResultados() {
 
+  var precoTotal = 0;
 
-var listaEstados = JSON.parse("");
+  //var listaEstados = JSON.parse("");
 
   alert("Funcionou!\n\nPreço total do produto: " + precoTotal);
 }
