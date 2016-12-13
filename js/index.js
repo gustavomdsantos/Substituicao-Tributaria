@@ -3,9 +3,9 @@
  */
 function verResultados() {
 
-  var precoTotal = 0;
+  //var precoTotal = 0;
 
-  //var listaEstados = JSON.parse("");
+  var precoTotal = jsyaml.load('greeting: hello\nname: world');
 
   alert("Funcionou!\n\nPreço total do produto: " + precoTotal);
 }
