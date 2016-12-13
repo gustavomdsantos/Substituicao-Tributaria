@@ -118,37 +118,37 @@ pi:
     - ce
     - ma
     - pe
-pr:
-  carga_tributaria: 0.0466
-  vizinhos:
-    - ms
-    - sc
-    - sp
-rn:
-  carga_tributaria: 0.0699
-  vizinhos:
-    - ce
-    - pb
-rs:
-  carga_tributaria: 0.0532
-  vizinhos:
-    - sc
 rj:
   carga_tributaria: 0.0530
   vizinhos:
     - es
     - mg
     - sp
+pr:
+  carga_tributaria: 0.0466
+  vizinhos:
+    - ms
+    - sc
+    - sp
 ro:
   carga_tributaria: 0.0605
   vizinhos:
     - am
     - mt
+rn:
+  carga_tributaria: 0.0699
+  vizinhos:
+    - ce
+    - pb
 rr:
   carga_tributaria: 0.0710
   vizinhos:
     - am
     - pa
+rs:
+  carga_tributaria: 0.0532
+  vizinhos:
+    - sc
 sc:
   carga_tributaria: 0.0564
   vizinhos:
