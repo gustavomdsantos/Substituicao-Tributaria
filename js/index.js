@@ -5,9 +5,36 @@ function verResultados() {
 
   //var precoTotal = 0;
 
-  var precoTotal = jsyaml.load('greeting: hello\nname: world');
+  //var precoTotal = jsyaml.load('greeting: hello\nname: world');
+
+  var precoTotal = jsyaml.load(readTextFile("./assets/data/carga-tributaria-brasil.yml"))
 
   alert("Funcionou!\n\nPreço total do produto: " + precoTotal);
+}
+
+/**
+ * Função que lê um arquivo e salva em uma variável String de forma otimizada.
+ * Código reusado de: http://stackoverflow.com/a/14446538
+ */
+function readTextFile(file) {
+
+  var rawFile = new XMLHttpRequest();
+  rawFileText = ""; // variável GLOBAL, necessário pra que a subfunção funcione
+  rawFile.open("GET", file, false);
+
+  rawFile.onreadystatechange = function() {
+
+    if (rawFile.readyState === 4) {
+
+      if (rawFile.status === 200 || rawFile.status === 0) {
+
+        window.rawFileText = rawFile.responseText;
+        //alert(window.rawFileText);
+      }
+    }
+  };
+  rawFile.send(null);
+  return window.rawFileText;
 }
 
 /**
