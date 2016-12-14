@@ -36,6 +36,33 @@ function readTextFile(file) {
 }
 
 /**
+ * Função que gera a rota que paga menos impostos, sempre com origem em Goiás.
+ */
+function geraMelhorRota() {
+
+  var origem = "go";
+  var destino = document.getElementById("estado-destino-produto").value;
+
+  var melhorRota = [origem]; // i=0
+
+  var i=1;
+  var j=0;
+  while (melhorRota[i] != destino) { // enquanto não tiver montado estado de destino
+
+    var cargaTributariaEstadoAtual = Object.byString(dados, melhorRota[i-1]).carga_tributaria;
+    var fronteirasEstadoAtual = Object.byString(dados, melhorRota[i-1]).vizinhos; // ver quais os estados que fazem fronteira com este
+
+    for (j=0; i<fronteirasEstadoAtual.length; i++) { // verificar qual a menor carga tributaria dentre as fronteiras
+      var cargaTributariaOutroEstado_tmp = Object.byString(dados, melhorRota[i]).carga_tributaria;
+
+      if (cargaTributariaOutroEstado_tmp < cargaTributariaEstadoAtual) { // a carga tributaria é menor que a comparação anterior
+        melhorRota[i] = Object.byString(dados.melhorRota[i]);
+    }
+    i++;
+  }
+}
+
+/**
  * Faz formatação automática das caixas de texto para dinheiro e porcentagem.
  * Fonte: https://igorescobar.github.io/jQuery-Mask-Plugin
  */
