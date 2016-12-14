@@ -3,12 +3,10 @@
  */
 function verResultados() {
 
-  //var precoTotal = 0;
-
-  //var precoTotal = jsyaml.load('greeting: hello\nname: world');
-
-  var precoTotal = jsyaml.load(readTextFile("./assets/data/carga-tributaria-brasil.yml"))
-
+  var precoTotal = jsyaml.load(readTextFile("./assets/data/carga-tributaria-brasil.yml"));
+  /*A linha acima não funciona offline, só funciona se tiver no GitHub Pages ou,
+  opcionalmente estiver sendo usada a opção "Permitir acesso às URLs do arquivo
+  no Google Chrome."*/
   alert("Funcionou!\n\nPreço total do produto: " + precoTotal);
 }
 
