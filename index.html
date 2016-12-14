@@ -38,207 +38,205 @@
         de rota para a logística de um determinado produto com relação às menores
         taxas de impostos para determinado produto.
       </p>
-      <form>
-        <!-- Seção "Dados sobre o produto" -->
-        <div class="form-group" id="dados-produto">
-          <h2>Dados sobre o produto</h2>
-          <hr>
-          <table class="table-condensed">
-            <tbody>
-              <tr>
-                <td class="td-first-col"><label for="estado-destino-produto">Estado desejado de destino:</label></td>
-                <td><select name="estado-destino-produto" id="estado-destino-produto">
-                  <option>Selecione...</option>
-                  <option value="acre">Acre</option>
-                  <option value="alagoas">Alagoas</option>
-                  <option value="amapa">Amapá</option>
-                  <option value="amazonas">Amazonas</option>
-                  <option value="bahia">Bahia</option>
-                  <option value="ceara">Ceará</option>
-                  <option value="distrito-federal">Distrito Federal</option>
-                  <option value="espirito-santo">Espírito Santo</option>
-                  <option value="goias">Goiás</option>
-                  <option value="maranhao">Maranhão</option>
-                  <option value="mato-grosso">Mato Grosso</option>
-                  <option value="mato-grosso-do-sul">Mato Grosso do Sul</option>
-                  <option value="minas-gerais">Minas Gerais</option>
-                  <option value="para">Pará</option>
-                  <option value="paraiba">Paraíba</option>
-                  <option value="parana">Paraná</option>
-                  <option value="pernambuco">Pernambuco</option>
-                  <option value="piaui">Piauí</option>
-                  <option value="rio-de-janeiro">Rio de Janeiro</option>
-                  <option value="rio-grande-do-norte">Rio Grande do Norte</option>
-                  <option value="rio-grande-do-sul">Rio Grande do Sul</option>
-                  <option value="rondonia">Rondônia</option>
-                  <option value="roraima">Roraima</option>
-                  <option value="santa-catarina">Santa Catarina</option>
-                  <option value="sao-paulo">São Paulo</option>
-                  <option value="sergipe">Sergipe</option>
-                  <option value="tocantins">Tocantins</option>
-                </select></td>
-              </tr>
-              <tr>
-                <td class="td-first-col"><label for="categoria-produto">Categoria do produto:</label></td>
-                <td><select name="categoria-produto" id="categoria-produto">
-                  <option>Selecione...</option>
-                  <option value="automovel-motocicleta-triciclo-e-quadriciclo">AUTOMÓVEL, MOTOCICLETA, TRICICLO E QUADRICICLO</option>
-                  <option value="autopecas">AUTOPEÇAS</option>
-                  <option value="bebidas-alcoolicas">BEBIDAS ALCOÓLICAS</option>
-                  <option value="cimento">CIMENTO</option>
-                  <option value="papel">PAPEL</option>
-                  <option value="produtos-alimenticios">PRODUTOS ALIMENTÍCIOS</option>
-                  <option value="produtos-eletronicos-eletroeletronicos-e-eletrodomesticos">PRODUTOS ELETRÔNICOS, ELETROELETRÔNICOS E ELETRODOMÉSTICOS</option>
-                  <option value="sorvete">SORVETE</option>
-                </select></td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <!-- Seção "Dados sobre a origem e destino do produto" -->
-        <div class="form-group" id="dados-origem-destino-produto">
-          <h2>Dados sobre a origem e destino do produto</h2>
-          <hr>
-          <table class="table-condensed">
-            <thead>
-              <th><h3>Origem do produto / fornecedor</h3></th>
-              <th><h3>Destino do produto</h3></th>
-            </thead>
-            <tbody>
-              <td>
-                <table class="table-condensed">
-                  <tr>
-                    <td class="td-first-col"><label for="tipo-estabelecimento-origem">Tipo do estabelecimento:</label></td>
-                    <td>
-                      <label class="radio-inline">
-                        <input type="radio" name="tipo-estabelecimento-origem">Atacado
-                      </label>
-                      <label class="radio-inline">
-                        <input type="radio" name="tipo-estabelecimento-origem">Varejo
-                      </label>
-                      <label class="radio-inline">
-                        <input type="radio" name="tipo-estabelecimento-origem">Indústria
-                      </label>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="td-first-col"><label for="regime-fornecedor-origem">Regime do fornecedor:</label></td>
-                    <td>
-                      <label class="radio-inline">
-                        <input type="radio" name="regime-fornecedor-origem">Simples Nacional
-                      </label>
-                      <label class="radio-inline">
-                        <input type="radio" name="regime-fornecedor-origem">Nenhum
-                      </label>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="td-first-col"><label for="mercadoria-importada-origem">Mercadoria importada?</label></td>
-                    <td>
-                      <label class="radio-inline">
-                        <input type="radio" name="mercadoria-importada-origem">Sim
-                      </label>
-                      <label class="radio-inline">
-                        <input type="radio" name="mercadoria-importada-origem">Não
-                      </label>
-                    </td>
-                  </tr>
-                </table>
-              </td>
-              <td>
-                <table class="table-condensed">
-                  <tr>
-                    <td class="td-first-col"><label for="finalidade-mercadoria-destino">Finalidade da mercadoria:</label></td>
-                    <td>
-                      <select name="finalidade-mercadoria-destino" id="finalidade-mercadoria-destino">
-                        <option>Selecione...</option>
-                        <option value="comercializacao">Comercialização</option>
-                        <option value="consumo-final-uso">Consumo final (uso)</option>
-                        <option value="consumidor-final-nao-contribuinte-do-icms">Consumidor final não contribuinte do ICMS</option>
-                        <option value="industrializacao">Industrialização</option>
-                      </select>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="td-first-col"><label for="regime-destinatario-destino">Regime do destinatário:</label></td>
-                    <td>
-                      <label class="radio-inline">
-                        <input type="radio" name="regime-destinatario-destino">Simples Nacional
-                      </label>
-                      <label class="radio-inline">
-                        <input type="radio" name="regime-destinatario-destino">Nenhum
-                      </label>
-                    </td>
-                  </tr>
-                </table>
-              </td>
-            </tbody>
-          </table>
-        </div>
-        <!-- Seção "Dados de valores sobre o produto" -->
-        <div class="form-group" id="dados-valores-produto">
-          <h2>Dados de valores sobre o produto</h2>
-          <hr>
-          <table class="table-condensed">
+      <!-- Seção "Dados sobre o produto" -->
+      <div class="form-group" id="dados-produto">
+        <h2>Dados sobre o produto</h2>
+        <hr>
+        <table class="table-condensed">
+          <tbody>
             <tr>
-              <td>
-                <table class="table-condensed">
-                  <tr>
-                    <td class="td-first-col"><label for="preco-total-produto">Preço total do produto:</label></td>
-                    <td><input type="text" name="preco-total-produto" class="money"/></td>
-                  </tr>
-                  <tr>
-                    <td class="td-first-col"><label for="desconto-incondicional">Desconto Incondicional:</label></td>
-                    <td><input type="text" name="desconto-incondicional" class="money"/></td>
-                  </tr>
-                </table>
-              </td>
-              <td>
-                <table class="table-condensed">
-                  <tr>
-                    <td class="td-first-col"><label for="outras-despesas">Outras despesas:</label></td>
-                    <td><input type="text" name="outras-despesas" class="money"/></td>
-                  </tr>
-                  <tr>
-                    <td class="td-first-col"><label for="seguro">Seguro:</label></td>
-                    <td><input type="text" name="seguro" class="money"/></td>
-                  </tr>
-                </table>
-              </td>
-              <td>
-                <table class="table-condensed">
-                  <tr>
-                    <td class="td-first-col"><label for="frete">Frete:</label></td>
-                    <td><input type="text" name="frete" class="money"/></td>
-                  </tr>
-                  <tr>
-                    <td class="td-first-col"><label for="ipi">IPI:</label></td>
-                    <td><input type="text" name="ipi" class="money"/></td>
-                  </tr>
-                </table>
-              </td>
-            </tr>
-          </table>
-        </div>
-        <!-- Seção "Benefícios fiscais" -->
-        <div class="form-group" id="beneficios-fiscais">
-          <h2>Benefícios fiscais</h2>
-          <hr>
-          <table class="table-condensed">
-            <tr>
-              <td class="td-first-col"><label for="reducao-icms">Redução da base de cálculo ICMS (%):</label></td>
-              <td><input type="text" name="reducao-icms" class="percent"/></td>
+              <td class="td-first-col"><label for="estado-destino-produto">Estado desejado de destino:</label></td>
+              <td><select name="estado-destino-produto" id="estado-destino-produto">
+                <option>Selecione...</option>
+                <option value="ac">Acre</option>
+                <option value="al">Alagoas</option>
+                <option value="ap">Amapá</option>
+                <option value="am">Amazonas</option>
+                <option value="ba">Bahia</option>
+                <option value="ce">Ceará</option>
+                <option value="df">Distrito Federal</option>
+                <option value="es">Espírito Santo</option>
+                <option value="go">Goiás</option>
+                <option value="ma">Maranhão</option>
+                <option value="mt">Mato Grosso</option>
+                <option value="ms">Mato Grosso do Sul</option>
+                <option value="mg">Minas Gerais</option>
+                <option value="pa">Pará</option>
+                <option value="pb">Paraíba</option>
+                <option value="pr">Paraná</option>
+                <option value="pe">Pernambuco</option>
+                <option value="pi">Piauí</option>
+                <option value="rj">Rio de Janeiro</option>
+                <option value="rn">Rio Grande do Norte</option>
+                <option value="rs">Rio Grande do Sul</option>
+                <option value="rn">Rondônia</option>
+                <option value="rr">Roraima</option>
+                <option value="sc">Santa Catarina</option>
+                <option value="sp">São Paulo</option>
+                <option value="se">Sergipe</option>
+                <option value="to">Tocantins</option>
+              </select></td>
             </tr>
             <tr>
-              <td class="td-first-col"><label for="reducao-icms-st">Redução da base de cálculo ICMS ST (%):</label></td>
-              <td><input type="text" name="reducao-icms-st" class="percent"/></td>
+              <td class="td-first-col"><label for="categoria-produto">Categoria do produto:</label></td>
+              <td><select name="categoria-produto" id="categoria-produto">
+                <option>Selecione...</option>
+                <option value="automovel-motocicleta-triciclo-e-quadriciclo">AUTOMÓVEL, MOTOCICLETA, TRICICLO E QUADRICICLO</option>
+                <option value="autopecas">AUTOPEÇAS</option>
+                <option value="bebidas-alcoolicas">BEBIDAS ALCOÓLICAS</option>
+                <option value="cimento">CIMENTO</option>
+                <option value="papel">PAPEL</option>
+                <option value="produtos-alimenticios">PRODUTOS ALIMENTÍCIOS</option>
+                <option value="produtos-eletronicos-eletroeletronicos-e-eletrodomesticos">PRODUTOS ELETRÔNICOS, ELETROELETRÔNICOS E ELETRODOMÉSTICOS</option>
+                <option value="sorvete">SORVETE</option>
+              </select></td>
             </tr>
-          </table>
-        </div>
-        <center>
-          <button type="submit" class="btn btn-default btn-primary" onclick="verResultados();">Continuar</button>
-        </center>
-      </form>
+          </tbody>
+        </table>
+      </div>
+      <!-- Seção "Dados sobre a origem e destino do produto" -->
+      <div class="form-group" id="dados-origem-destino-produto">
+        <h2>Dados sobre a origem e destino do produto</h2>
+        <hr>
+        <table class="table-condensed">
+          <thead>
+            <th><h3>Origem do produto / fornecedor</h3></th>
+            <th><h3>Destino do produto</h3></th>
+          </thead>
+          <tbody>
+            <td>
+              <table class="table-condensed">
+                <tr>
+                  <td class="td-first-col"><label for="tipo-estabelecimento-origem">Tipo do estabelecimento:</label></td>
+                  <td>
+                    <label class="radio-inline">
+                      <input type="radio" name="tipo-estabelecimento-origem">Atacado
+                    </label>
+                    <label class="radio-inline">
+                      <input type="radio" name="tipo-estabelecimento-origem">Varejo
+                    </label>
+                    <label class="radio-inline">
+                      <input type="radio" name="tipo-estabelecimento-origem">Indústria
+                    </label>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="td-first-col"><label for="regime-fornecedor-origem">Regime do fornecedor:</label></td>
+                  <td>
+                    <label class="radio-inline">
+                      <input type="radio" name="regime-fornecedor-origem">Simples Nacional
+                    </label>
+                    <label class="radio-inline">
+                      <input type="radio" name="regime-fornecedor-origem">Nenhum
+                    </label>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="td-first-col"><label for="mercadoria-importada-origem">Mercadoria importada?</label></td>
+                  <td>
+                    <label class="radio-inline">
+                      <input type="radio" name="mercadoria-importada-origem">Sim
+                    </label>
+                    <label class="radio-inline">
+                      <input type="radio" name="mercadoria-importada-origem">Não
+                    </label>
+                  </td>
+                </tr>
+              </table>
+            </td>
+            <td>
+              <table class="table-condensed">
+                <tr>
+                  <td class="td-first-col"><label for="finalidade-mercadoria-destino">Finalidade da mercadoria:</label></td>
+                  <td>
+                    <select name="finalidade-mercadoria-destino" id="finalidade-mercadoria-destino">
+                      <option>Selecione...</option>
+                      <option value="comercializacao">Comercialização</option>
+                      <option value="consumo-final-uso">Consumo final (uso)</option>
+                      <option value="consumidor-final-nao-contribuinte-do-icms">Consumidor final não contribuinte do ICMS</option>
+                      <option value="industrializacao">Industrialização</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="td-first-col"><label for="regime-destinatario-destino">Regime do destinatário:</label></td>
+                  <td>
+                    <label class="radio-inline">
+                      <input type="radio" name="regime-destinatario-destino">Simples Nacional
+                    </label>
+                    <label class="radio-inline">
+                      <input type="radio" name="regime-destinatario-destino">Nenhum
+                    </label>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tbody>
+        </table>
+      </div>
+      <!-- Seção "Dados de valores sobre o produto" -->
+      <div class="form-group" id="dados-valores-produto">
+        <h2>Dados de valores sobre o produto</h2>
+        <hr>
+        <table class="table-condensed">
+          <tr>
+            <td>
+              <table class="table-condensed">
+                <tr>
+                  <td class="td-first-col"><label for="preco-total-produto">Preço total do produto:</label></td>
+                  <td><input type="text" name="preco-total-produto" class="money"/></td>
+                </tr>
+                <tr>
+                  <td class="td-first-col"><label for="desconto-incondicional">Desconto Incondicional:</label></td>
+                  <td><input type="text" name="desconto-incondicional" class="money"/></td>
+                </tr>
+              </table>
+            </td>
+            <td>
+              <table class="table-condensed">
+                <tr>
+                  <td class="td-first-col"><label for="outras-despesas">Outras despesas:</label></td>
+                  <td><input type="text" name="outras-despesas" class="money"/></td>
+                </tr>
+                <tr>
+                  <td class="td-first-col"><label for="seguro">Seguro:</label></td>
+                  <td><input type="text" name="seguro" class="money"/></td>
+                </tr>
+              </table>
+            </td>
+            <td>
+              <table class="table-condensed">
+                <tr>
+                  <td class="td-first-col"><label for="frete">Frete:</label></td>
+                  <td><input type="text" name="frete" class="money"/></td>
+                </tr>
+                <tr>
+                  <td class="td-first-col"><label for="ipi">IPI:</label></td>
+                  <td><input type="text" name="ipi" class="money"/></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <!-- Seção "Benefícios fiscais" -->
+      <div class="form-group" id="beneficios-fiscais">
+        <h2>Benefícios fiscais</h2>
+        <hr>
+        <table class="table-condensed">
+          <tr>
+            <td class="td-first-col"><label for="reducao-icms">Redução da base de cálculo ICMS (%):</label></td>
+            <td><input type="text" name="reducao-icms" class="percent"/></td>
+          </tr>
+          <tr>
+            <td class="td-first-col"><label for="reducao-icms-st">Redução da base de cálculo ICMS ST (%):</label></td>
+            <td><input type="text" name="reducao-icms-st" class="percent"/></td>
+          </tr>
+        </table>
+      </div>
+      <center>
+        <button class="btn btn-default btn-primary" onclick="verResultados();">Continuar</button>
+      </center>
   </body>
   <footer>
     <center>
