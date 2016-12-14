@@ -7,7 +7,7 @@ function verResultados() {
   /*A linha acima não funciona offline, só funciona se tiver no GitHub Pages ou,
   opcionalmente estiver sendo usada a opção "Permitir acesso às URLs do arquivo
   no Google Chrome."*/
-  alert("Funcionou!\n\nPreço total do produto: " + precoTotal);
+  alert("Processado!\n\nMelhor rota alternativa para este produto é: " + precoTotal);
 }
 
 /**
